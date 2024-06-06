@@ -1,0 +1,167 @@
+.content-2{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+.content-1 img{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.content-1{
+    /* background-image: url(img/bg1.jpg); */
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    left: 0%;
+}
+
+.social-media a {
+    margin-right: 15px; /* Menambahkan margin kanan */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    color: black;
+}
+
+.social-media a:last-child {
+    margin-right: 20px; /* Menghapus margin pada item terakhir */
+}
+
+.content-2{
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+body{
+    background-image: url(img/bg1.jpg);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.content-3 img{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.content-4{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+.content-3{
+    /* background-image: url(img/bg1.jpg); */
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    left: 5%;
+}
+
+.content-4{
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+.content-1{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+.content-1{
+    font-size: 20px; /*ukuran tulisan */
+    color: white;
+    font-style: oblique;
+}
+
+.content-3{
+    display: flex;
+    align-items: center;
+    gap: 250px;
+}
+
+.content-3{
+    font-size: 20px; /*ukuran tulisan */
+    color: white;
+    font-style: oblique;
+}
+
+.content-1{
+    flex-direction: column;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px; /* Sesuaikan lebar card */
+    text-align: center; /* Pusatkan teks dalam card */
+}
+
+/* Gaya untuk perangkat dengan lebar maksimal 600px */
+@media (max-width: 600px) {
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+    .header {
+      font-size: 20px;
+    }
+  }
+  
+  /* Gaya untuk perangkat dengan lebar antara 601px dan 1024px */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+      width: 80%;
+      padding: 20px;
+    }
+    .header {
+      font-size: 25px;
+    }
+  }
+  
+  /* Gaya untuk perangkat dengan lebar lebih dari 1024px */
+  @media (min-width: 1025px) {
+    .container {
+      width: 70%;
+      padding: 30px;
+    }
+    .header {
+      font-size: 30px;
+    }
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 200px; /* Fleksibel dengan minimal lebar 200px */
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .item {
+    flex: 1 1 100%;
+  }
+}
